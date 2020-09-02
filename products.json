@@ -2,7 +2,7 @@
 	"content": [
 		{
 			"price": 159,
-			"costprice": null,
+			"costprice": 40,
 			"created": "2020-09-01T16:24:46+02:00",
 			"title": "OXFLK111 OXC Kombi K\u00e6del\u00e5s",
 			"id": 5118365,
@@ -37,7 +37,7 @@
 		},
 		{
 			"price": 269,
-			"costprice": null,
+			"costprice": 40,
 			"created": "2020-09-01T15:24:31+02:00",
 			"title": "XLC Headset HS-I02",
 			"id": 5118122,
@@ -107,7 +107,7 @@
 		},
 		{
 			"price": 249,
-			"costprice": null,
+			"costprice": 20,
 			"created": "2020-08-26T15:04:41+02:00",
 			"title": "SCHWALBE Smart Sam Standard tire 26 x ",
 			"id": 5094026,
@@ -247,7 +247,7 @@
 		},
 		{
 			"price": 249,
-			"costprice": null,
+			"costprice": 10,
 			"created": "2020-08-25T13:21:26+02:00",
 			"title": "IBBMT800PA Krankboks BB M8000",
 			"id": 5074114,
