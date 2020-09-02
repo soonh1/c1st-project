@@ -1,6 +1,6 @@
 # Product search
 
-The goal of the project is to create a project list viewer and gain some experience with angular and reactiveX.
+The goal of the project is to create a project list viewer and gain some experience with angular
 
 The project must be implemented using https://angular.io/.
 
