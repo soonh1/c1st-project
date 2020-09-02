@@ -14,7 +14,7 @@ Requirements
 
 1. Full text search. The user must be able to search for the products using full text. Input should be provided via a text input. Once a user starts typing the list of products should be filtered using full text search so he can easily find what he needs.
    1. This functionality must be done using https://www.learnrxjs.io/ which is a main part of the angular.io package.
-   1. Upon first search. Products should be loaded from products.json into the main memory. Subsequent search must not include this step. For this use the angular http client and read products.json from the assets folder. This means no products are shown before the first time the user starts typing.
+   1. Upon first search. Products should be loaded from products.json into the main memory. Subsequent search must not include this step. For this use the angular http client and read products.json which should be stored in the assets folder. This means no products are shown before the first time the user starts typing.
    1. To relax the CPU the search must include debouncing. Meaning that nothing should happen unless the user has paused typing for at least, say 150 ms.
    1. The search should use wildcards. The user should find "SRAM Power Pack PG-1050" be typing "Power SRAM"
    1. For this use `switchMap`, `debounceTime`, `async pipe` or `subscribe`
