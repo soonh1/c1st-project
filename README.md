@@ -13,7 +13,7 @@ The project must be implemented using https://angular.io/.
 Requirements
 
 1. The products must be listed in a user-friendly and elegant way
-1. The profit of sellings a product must be list. This can be calculcated using price and costprice. Please note, price includes VAT (25 %) while cost price does not.
+1. The profit of sellings a product must be listed. This can be calculcated using price and costprice. Please note, price includes VAT (25 %) while cost price does not.
 If neither price or costprice is specified do not show anything.
 1. Full text search. The user must be able to search for the products using full text. Input should be provided via a text input. Once a user starts typing the list of products should be filtered using full text search so he can easily find what he needs.
    1. This functionality must be done using https://www.learnrxjs.io/ which is included in angular.
