@@ -21,8 +21,8 @@ If neither price or costprice is specified do not show anything.
    1. To relax the CPU the search must include debouncing. Meaning that nothing should happen unless the user has paused typing for at least, say 150 ms.
    1. The search should be freetext. The user should find "SRAM Power Pack PG-1050" be typing "Power SRAM"
    1. For this use `switchMap`, `debounceTime`, `async pipe` or `subscribe`
+1. The user must be able to sort the products. Decide for example two attributes the user can choose to sort on.
 1. (Optional) Pagination. Fx show at most 10 products per page. What happens if the user paginates fast on a slow connection?
-1. (Optional) The user must be able to sort the products. Decide for example two attributes to sort on.
 
 
 This is a take home project
