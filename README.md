@@ -5,7 +5,7 @@ The goal of the project is to create a project list viewer and gain some experie
 The project must be implemented using https://angular.io/.
 
 1. Clone this repo and create a branch with your name.
-1. Initialize an angular project and create a component `ng g c product-search` and a service `ng g s product.service` using the angular CLI
+1. Initialize an angular project and create a component `ng g c product-search` and a service `ng g s product` using the angular CLI
 1. When done coding. Make sure you fulfil the requirements and make sure the project builds `ng build`.
 1. Create a pull request.
 
