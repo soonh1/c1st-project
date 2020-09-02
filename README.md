@@ -23,7 +23,7 @@ If neither price or costprice is specified do not show anything.
    1. For this use `switchMap`, `debounceTime`, `async pipe` or `subscribe`
 1. The user must be able to sort the products. Decide for example two attributes the user can choose to sort on.
 1. (Optional) Pagination. Fx show at most 10 products per page. What happens if the user paginates fast on a slow connection?
-1. (Option) Can you make this search O(lg(n))?
+1. (Optional) Which data structure makes this search O(lg(n))?
 
 This is a take home project
 
