@@ -19,11 +19,11 @@ If neither price or costprice is specified do not show anything.
    1. This functionality must be done using https://www.learnrxjs.io/ which is included in angular.
    1. Upon first search. Products should be loaded from products.json into the main memory. Subsequent search must not include this step. For this use the angular http client and read products.json which should be stored in the assets folder. This means no products are loaded nor shown before the first time the user starts typing.
    1. To relax the CPU the search must include debouncing. Meaning that nothing should happen unless the user has paused typing for at least, say 150 ms.
-   1. The search should be freetext. The user should find "SRAM Power Pack PG-1050" be typing "Power SRAM"
+   1. The search should be freetext. The user should find "SRAM Power Pack PG-1050" by typing "Power SRAM". Test on this specific case.
    1. For this use `switchMap`, `debounceTime`, `async pipe` or `subscribe`
 1. The user must be able to sort the products. Decide for example two attributes the user can choose to sort on.
-1. (Optional) Pagination. Fx show at most 10 products per page. What happens if the user paginates fast on a slow connection?
-1. (Optional) Which data structure makes this search O(lg(n))?
+1. (Optional) Pagination. Fx show at most 10 products per page. What happens if the user clicks fast on the pagination buttons if the server reponds slowly. Why do we not use `mergeMap`?
+1. (Optional) Which data structure makes this search O(lg(n)). hint: What does Google do?
 
 This is a take home project
 
