@@ -8,7 +8,7 @@ All data is loaded into the client from `products.json`. Meaning this project ha
 
 The project must be implemented using https://angular.io/.
 
-Those docs are useful:
+**Those docs are useful**
 
 1. https://angular.io/guide/architecture-components
 1. https://angular.io/guide/setup-local
@@ -16,7 +16,7 @@ Those docs are useful:
 1. https://angular.io/guide/pipes
 1. https://angular.io/guide/http
 
-To do:
+**To do**
 
 1. Clone this repo and create a branch with your name.
 1. Initialize an angular project `ng new search` and create a component `ng g c product-search` and using the angular CLI
@@ -24,9 +24,9 @@ To do:
 1. Create a pull request.
 
 
-Requirements:
+**Requirements**
 
-1. The products must be listed in a user-friendly and elegant way. You can read a json file with `HttpClient get` (no decoding needed)
+1. The products must be listed in a user-friendly and elegant way. You can read a json file with `HttpClient get`
 1. Pagination. Show, say 10, products per page. Hint: use `slice` pipe
 1. Full text search. The user must be able to search for the products using full text. Input should be provided via a text input. Once a user starts typing the list of products should be filtered using full text search so he can easily find what he needs.
    1. This functionality must be done using https://www.learnrxjs.io/ which is included in angular. 
@@ -35,7 +35,7 @@ Requirements:
    1. The search should be freetext. The user should find "SRAM Power Pack PG-1050" by typing "Power SRAM". Test on this specific case.
    1. For this use `switchMap`, `debounceTime`, `async pipe` or `subscribe`
 
-Extra questions (optional), for extra fun:
+**Extra questions (optional), for extra fun**
 
 1. The user must be able to sort the products. Decide for example two attributes the user can choose to sort on.
 1. (Hard) Which data structure makes this search fast, like almost constant time. Show example?
