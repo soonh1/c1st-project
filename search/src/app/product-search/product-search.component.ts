@@ -29,11 +29,6 @@ export class ProductSearchComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    // read .json file and save to variable
-    this.getJSON().subscribe(data => {
-      this.products = data["content"];
-    });
-
     // when search input changes, wait 150 ms, then filter products based on input, 
     // unless input changes again
     this.searchInputChanged.pipe(debounceTime(150), map(search => {
@@ -55,6 +50,13 @@ export class ProductSearchComponent implements OnInit {
 
   // monitor change in search input. On change, update Subject
   onKey(event: any) {
+    // read .json file and save to variable
+    if (this.products.length === 0){
+      this.getJSON().subscribe(data => {
+        this.products = data["content"];
+      });
+    }
+
     this.searchInputChanged.next(event.target.value);
     if (event.target.value === "") {
       this.curPage = 1; // if search input is reset, return to page 1
