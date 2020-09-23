@@ -21,7 +21,7 @@ The project must be implemented using https://angular.io/.
 1. Clone this repo and create a branch with your name.
 1. Initialize an angular project `ng new search` and create a component `ng g c product-search` and using the angular CLI
 1. When done coding. Make sure you fulfil the requirements and make sure the project builds `ng build`.
-1. Create a pull request.
+1. Zip your project and send it to info@servicepos.com subject: Projectsearch
 
 
 **Requirements**
@@ -33,11 +33,14 @@ The project must be implemented using https://angular.io/.
    1. Upon first search. Products should be loaded from products.json into the main memory. Subsequent search must not include this step. For this use the angular http client and read products.json which should be stored in the assets folder. This means no products are loaded nor shown before the first time the user starts typing.
    1. To relax the CPU the search must include debouncing. Meaning that nothing should happen unless the user has paused typing for at least, say 150 ms.
    1. The search should be freetext. The user should find "SRAM Power Pack PG-1050" by typing "Power SRAM". Test on this specific case.
-   1. Hint: https://www.learnrxjs.io/learn-rxjs/recipes/type-ahead. However you need to modifiy the pipe.
+   1. **Hint:** https://www.learnrxjs.io/learn-rxjs/recipes/type-ahead. However, you need to modify the pipe.
 
-**Extra questions (optional), for extra fun**
 
-1. The user must be able to sort the products. Decide for example two attributes the user can choose to sort on.
+**Extra questions, for extra fun (optional)**
+1. (Hard) Test your app functions correctly according to 3.ii by simulating a slow connection in Dev Tools -> Network -> Fast 3G.
+    What happens if you type while `products.json` is loading.
+   `exhaustMap` might help you solve any race condition issues. 
+  
 1. (Hard) Which data structure makes this search fast, like almost constant time. Show example?
 1. It's friday night. How much beer do you drink?
 
