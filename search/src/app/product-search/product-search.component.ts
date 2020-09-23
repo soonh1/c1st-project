@@ -32,6 +32,13 @@ export class ProductSearchComponent implements OnInit {
     // when search input changes, wait 150 ms, then filter products based on input, 
     // unless input changes again
     this.searchInputChanged.pipe(debounceTime(150), map(search => {
+      // read .json file and save to variable if it has not been done
+      if (this.products.length === 0){
+        this.getJSON().subscribe(data => {
+          this.products = data["content"];
+          console.log(this.products)
+        });
+      }
       return this.products.filter(product => this.includesAll(search, product.title))
     })).subscribe(products => {
       this.filteredProducts = products;
@@ -50,13 +57,6 @@ export class ProductSearchComponent implements OnInit {
 
   // monitor change in search input. On change, update Subject
   onKey(event: any) {
-    // read .json file and save to variable
-    if (this.products.length === 0){
-      this.getJSON().subscribe(data => {
-        this.products = data["content"];
-      });
-    }
-
     this.searchInputChanged.next(event.target.value);
     if (event.target.value === "") {
       this.curPage = 1; // if search input is reset, return to page 1
