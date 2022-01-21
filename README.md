@@ -36,12 +36,12 @@ The project must be implemented using https://angular.io/.
    1. **Hint:** https://www.learnrxjs.io/learn-rxjs/recipes/type-ahead. However, you need to modify the pipe.
 
 
-1. (Hard) Test your app functions correctly according to 3.ii by simulating a slow connection in Dev Tools -> Network -> Fast 3G.
+1.  Test your app functions correctly according to 3.ii by simulating a slow connection in Dev Tools -> Network -> Fast 3G.
     What happens if you type while `products.json` is loading.
    `exhaustMap` might help you solve any race condition issues. 
   
-**Extra questions, for extra fun (optional)**
-1. (Hard) Which data structure makes this search fast, like almost constant time. Show example?
+**Extra questions, for extra fun**
+1. Which data structure makes this search fast, like almost constant time. Show example?
 1. It's friday night. How much beer do you drink?
 
 
