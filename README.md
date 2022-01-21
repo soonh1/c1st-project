@@ -21,7 +21,7 @@ The project must be implemented using https://angular.io/.
 1. Clone this repo and create a branch with your name.
 1. Initialize an angular project `ng new search` and create a component `ng g c product-search` and using the angular CLI
 1. When done coding. Make sure you fulfil the requirements and make sure the project builds `ng build`.
-1. Zip your project and send it to info@servicepos.com subject: Projectsearch
+1. Find a cool way to deliver the project
 
 
 **Requirements**
@@ -36,11 +36,11 @@ The project must be implemented using https://angular.io/.
    1. **Hint:** https://www.learnrxjs.io/learn-rxjs/recipes/type-ahead. However, you need to modify the pipe.
 
 
-**Extra questions, for extra fun (optional)**
 1. (Hard) Test your app functions correctly according to 3.ii by simulating a slow connection in Dev Tools -> Network -> Fast 3G.
     What happens if you type while `products.json` is loading.
    `exhaustMap` might help you solve any race condition issues. 
   
+**Extra questions, for extra fun (optional)**
 1. (Hard) Which data structure makes this search fast, like almost constant time. Show example?
 1. It's friday night. How much beer do you drink?
 
