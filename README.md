@@ -1,6 +1,6 @@
 # Product search
 
-Estimated time: 1-1.5 days (without Angular experience) 
+Estimated time: 8-12 hours (without Angular experience) 
 
 The goal of the project is to create a product list viewer and gain some experience with angular. 
 Mainly only components, the template engine, HTTP Client and reactiveX.
