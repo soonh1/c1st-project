@@ -46,4 +46,7 @@ The project must be implemented using https://angular.io/.
 1. Which data structure makes this search fast, like almost constant time. Show example?
 1. It's friday night. How much beer do you drink?
 
+# Learning curve
+
+
 
