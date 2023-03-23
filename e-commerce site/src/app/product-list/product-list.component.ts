@@ -14,6 +14,10 @@ export class ProductListComponent {
     window.alert("The product has been shared!");
     console.log("share button clicked and showed in console");
   }
+  onNotify() {
+    window.alert("You will be notified when the product goes on sale");
+    console.log("Crazy price - is over 799");
+  }
 }
 
 /*
