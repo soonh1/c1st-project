@@ -47,6 +47,19 @@ The project must be implemented using https://angular.io/.
 1. It's friday night. How much beer do you drink?
 
 # Learning curve
+Learning Angular is a great way to develop my skills in web development, and building projects is a way to put my knowledge into practice. I am going to build two application as part of my learning curve and those two would be in branches called e-commerce site and Tour of Heroes. I hope by building multiple projects can help me gain experience in different areas of angular og deepen my understanding of the framework. 
 
+### e-commerce site
+This tutorial introduces you to the essentials of Angular by walking you through building an e-commerce site with a catalog, shopping cart, and check-out form.
+https://angular.io/start
+
+### Tour of Heroes
+This Tour of Heroes tutorial provides an introduction to the fundamentals of Angular and shows you how to:
+
+1. Set up your local Angular development environment.
+2. Use the Angular CLI to develop an application
+
+The Tour of Heroes application that you build helps a staffing agency manage its stable of heroes. The application has many of the features that you'd expect to find in any data-driven application.
+https://angular.io/tutorial/tour-of-heroes
 
 
