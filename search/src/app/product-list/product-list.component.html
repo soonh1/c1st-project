@@ -1,0 +1,45 @@
+<p>product-list works!</p>
+<app-product-search (searchEvent)="onSearch($event)"></app-product-search>
+<div class="product-list">
+  <div
+    class="product"
+    *ngFor="
+      let product of filteredProducts.slice(
+        currentPage * 10,
+        (currentPage + 1) * 10
+      )
+    "
+  >
+    <h3>{{ product.title }}</h3>
+    <p>Price: {{ product.price }}</p>
+    <p>Cost Price: {{ product.costprice }}</p>
+  </div>
+</div>
+<div class="count">
+  <button
+    class="prev-button"
+    (click)="prevPage()"
+    [disabled]="currentPage === 0"
+  >
+    Prev
+  </button>
+
+  <div class="page-buttons">
+    <button
+      class="page-button"
+      *ngFor="let page of getPages()"
+      (click)="currentPage = page"
+      [class.active]="currentPage === page"
+    >
+      {{ page + 1 }}
+    </button>
+  </div>
+
+  <button
+    class="next-button"
+    (click)="nextPage()"
+    [disabled]="(currentPage + 1) * 10 >= products.length"
+  >
+    Next
+  </button>
+</div>
